@@ -1,0 +1,11 @@
+[Unit]
+Description=Bot template
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/$USER/folder/main.py
+Restart=always
+User=$USER
+
+[Install]
+WantedBy=multi-user.target
